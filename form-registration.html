@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/form-style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>Регистрация</h2>
+            
+            <label for="name">Введите ваше имя:</label>
+            <input type="text" id="name" placeholder="Vasiliy">
+        
+            <label for="surname">Введите вашу фамилию (необязательно):</label>
+            <input type="text" id="surname" placeholder="Pupkin">
+
+            <label for="email">Введите ваш Email:</label>
+            <input type="email" id="email" placeholder="Example1@gmail.com">
+
+            <label for="password" class="label-password">Введите ваш пароль:
+                <div class="password-image"><img src="/hidden.png" alt="img" onclick="visualize_password()"></div>
+            </label>
+            <input type="password" id="password" placeholder="Your password">
+
+            <a class="link-btn" href="/form-email.html">Назад</a>
+        </form>
+    </div>
+    
+    <script src="/vsualize-password.js"></script>
+</body>
+</html>

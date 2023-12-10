@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="/form-style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="email">
+                <h2>Вход</h2>
+                <label for="email">Введите ваш Email:</label>
+                <input type="email" id="email" placeholder="Example1@gmail.com">
+
+                <label for="password" class="label-password">Введите ваш пароль:
+                    <div class="password-image"><img src="/hidden.png" alt="img" onclick="visualize_password()"></div>
+                </label>
+                <input type="password" id="password" placeholder="Your password">
+                
+                <a class="link-btn" href="/form-registration.html">Еще нет аккаунта? Зарегистрироваться...</a>
+            </div>
+
+        </form>    
+    </div>
+
+    <script src="/vsualize-password.js"></script>
+</body>
+</html>
