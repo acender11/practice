@@ -49,19 +49,24 @@
     position: relative;
 }
 
-.password-image {
+.password-image,
+.password-image-accept {
     position: absolute;
     left: 720px;
 }
 
-.password-image img {
+.password-image img,
+.password-image-accept img {
     width: 20px;
     height: 20px;
 }
-.password-image img:hover {
+.password-image img:hover,
+.password-image-accept img:hover{
     cursor: pointer;
 }
 
 .success {
-    color: chartreuse;
+    color: rgb(6, 177, 20);
+    font-size: 12px;
 }
+
