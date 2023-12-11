@@ -10,3 +10,19 @@ function visualize_password() {
         input.setAttribute("type", "password");
     }
 }
+
+function validate_email() {
+    let inputEmail = document.getElementById("email")
+    let email = inputEmail.value;
+
+    let validation = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    let isValid = validation.test(email);
+
+    if (isValid) {
+        alert(inputEmail.style.borderBottomColor)
+        inputEmail.style.borderBottomColor = "#7fff00";
+        inputEmail.insertAdjacentHTML('afterend', '<div class="success">Получено успешно</div>')
+    } else {
+        alert("Адрес электронной почты введен неверно")
+    }
+}
