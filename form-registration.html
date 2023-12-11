@@ -21,9 +21,14 @@
             <input type="email" id="email" placeholder="Example1@gmail.com">
 
             <label for="password" class="label-password">Введите ваш пароль:
-                <div class="password-image"><img src="/hidden.png" alt="img" onclick="visualize_password()"></div>
+                <div class="password-image"><img src="/hidden.png" alt="img" onclick="visualizePassword()"></div>
             </label>
             <input type="password" id="password" placeholder="Your password">
+
+            <label for="password_accept" class="label-password">Подтвердите пароль:
+                <div class="password-image-accept"><img src="/hidden.png" alt="img" onclick="visualizePasswordAccept()"></div>
+            </label>
+            <input type="password" id="password_accept" placeholder="Also your password">
 
             <a class="link-btn" href="/form-email.html">Назад</a>
         </form>
