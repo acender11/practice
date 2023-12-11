@@ -61,3 +61,7 @@
 .password-image img:hover {
     cursor: pointer;
 }
+
+.success {
+    color: chartreuse;
+}
