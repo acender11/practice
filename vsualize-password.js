@@ -33,9 +33,8 @@ function validateEmail() {
 
     if (!document.querySelector(".success")) {
         if (isValid) {
-            inputEmail.style.borderBottomColor = "rgb(6, 177, 20)";
-            inputEmail.insertAdjacentHTML('afterend', '<div class="success">Получено успешно</div>')
             inputEmail.style.marginBottom = 0;
+            inputEmail.insertAdjacentHTML('afterend', '<div class="success">Получено успешно</div>')
         } else {
             alert("Адрес электронной почты введен неверно")
         }
