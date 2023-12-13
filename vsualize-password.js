@@ -1,5 +1,5 @@
 function visualizePassword() {
-    let image = document.querySelector("img");
+    let image = document.querySelector(".password-image > img");
     let input = document.querySelector("#password");
 
     if (image.getAttribute("src") === "/hidden.png") {
