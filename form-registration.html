@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="/form-style.css">
 </head>
 <body>
-    <div class="container">
-        <form>
+        <form class="container">
             <h2>Регистрация</h2>
             
-            <label for="name">Введите ваше имя:</label>
-            <input type="text" id="name" placeholder="Vasiliy">
-        
-            <label for="surname">Введите вашу фамилию (необязательно):</label>
-            <input type="text" id="surname" placeholder="Pupkin">
+            <label for="name" class="form-label">Введите ваше имя:
+                <input type="text" id="name" placeholder="Vasiliy">
+                <span class="bar"></span>
+            </label>
 
-            <label for="email">Введите ваш Email:</label>
-            <input type="email" id="email" placeholder="Example1@gmail.com">
+            <label for="surname" class="form-label">Введите вашу фамилию (необязательно):
+                <input type="text" id="surname" placeholder="Pupkin">
+                <span class="bar"></span>
+            </label>
 
-            <label for="password" class="label-password">Введите ваш пароль:
+            <label for="email" class="form-label">Введите ваш Email:
+                <input type="email" id="email" placeholder="Example1@gmail.com">
+                <span class="bar"></span>
+            </label>
+
+            <label for="password" class="label-password form-label">Введите ваш пароль:
                 <div class="password-image"><img src="/hidden.png" alt="img" onclick="visualizePassword()"></div>
+                <input id="password" type="password" placeholder="Your password">
+                <span class="bar"></span>
             </label>
-            <input type="password" id="password" placeholder="Your password">
 
-            <label for="password_accept" class="label-password">Подтвердите пароль:
+            <label for="password_accept" class="form-label label-password">Подтвердите пароль:
                 <div class="password-image-accept"><img src="/hidden.png" alt="img" onclick="visualizePasswordAccept()"></div>
+                <input type="password" id="password_accept" placeholder="Also your password">
+                <span class="bar"></span>
             </label>
-            <input type="password" id="password_accept" placeholder="Also your password">
 
             <a class="link-btn" href="/form-email.html">Назад</a>
         </form>
-    </div>
     
     <script src="/vsualize-password.js"></script>
 </body>
